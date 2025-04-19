@@ -1,0 +1,11 @@
+{
+  "subject": "did:example:user123",
+  "issuer": "did:example:trustedIssuerCorp",
+  "issuanceDate": "2025-04-18T19:19:22.985Z",
+  "type": "ProofOfAgeCredential",
+  "details": {
+    "age": 25,
+    "nationality": "ExampleLand"
+  },
+  "context": "Example Credential for ZK Proof Demo"
+}

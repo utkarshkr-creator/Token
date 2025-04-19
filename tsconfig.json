@@ -1,0 +1,29 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["es2020"],
+    "module": "CommonJS", // Compiling to CommonJS is fine
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "./dist" // Keep if you compile other things
+  },
+  // tsconfig.json (relevant part)
+  "exclude": [
+    "node_modules",
+    "dist",
+    "cache",
+    "artifacts",
+    "./scripts/**/*.cjs",   // Exclude CJS scripts
+    "./tasks/**/*.cjs",     // Exclude CJS tasks
+    "hardhat.config.cjs"  // Exclude CJS config
+  ],
+  // "ts-node" block is NO LONGER needed for running .cjs files
+  "include": ["./scripts/**/*.ts", /* other .ts files */ "./typechain-types", "scripts/deploy.cjs"], // Adjust if needed
+  "exclude": ["node_modules", "./scripts/**/*.cjs", "./tasks/**/*.cjs", "hardhat.config.cjs"] // EXCLUDE .cjs files
+}
