@@ -1,7 +1,7 @@
 {
   "subject": "did:example:user123",
   "issuer": "did:example:trustedIssuerCorp",
-  "issuanceDate": "2025-04-18T19:19:22.985Z",
+  "issuanceDate": "2025-04-19T06:50:08.127Z",
   "type": "ProofOfAgeCredential",
   "details": {
     "age": 25,

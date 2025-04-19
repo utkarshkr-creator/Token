@@ -2,7 +2,7 @@
 NETWORK=localhost # Or sepolia, etc.
 
 echo "[INFO] Deploying contracts to network: $NETWORK..."
-npx hardhat run scripts/deploy.js --network $NETWORK
+npx hardhat run scripts/deploy.cjs --network $NETWORK
 
 # Verify output: Check for contract addresses and successful deployment messages.
 # Check if 'deployed_addresses.json' was created/updated.
